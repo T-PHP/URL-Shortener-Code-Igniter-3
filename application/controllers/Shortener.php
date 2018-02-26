@@ -128,7 +128,6 @@ class Shortener extends CI_Controller {
      */
     public function redirect()
     {
-        echo '<pre>'; var_dump(get_headers('https://tiurl.xyz/pah0')); echo '</pre>';  exit;
         if (!$this->uri->segment(1)) {
             redirect(base_url());
         }
