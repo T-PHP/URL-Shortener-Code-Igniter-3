@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <p><?= $description_msg; ?></p>
         <p class="alert-title"><?= $download_msg; ?> :</p>
         <p class="text-center">
-            <a href="" class="button-success">
+            <a href="https://github.com/T-PHP/URL-Shortener-Code-Igniter-3/archive/master.zip" class="button-success">
                 <i class="fas fa-download"></i> <?= $download_url_shortener_msg; ?>
             </a>
         </p>

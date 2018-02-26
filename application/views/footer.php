@@ -13,9 +13,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
             <div class="col-6">
                 <p class="text-right">
-                    <?= $created_with; ?> <i class="fa fa-heart"></i> <?= $by; ?> <a href="https://t-php.fr/"><i>t-php</i></a> |
+                    <?= $created_with; ?> <i class="fa fa-heart"></i> <?= $by; ?> <a href="https://t-php.fr/" target="_blank"><i>t-php</i></a> |
                     <span>v.0.1</span>
-                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/T-PHP/URL-Shortener-Code-Igniter-3" target="_blank"><i class="fab fa-github"></i></a>
                 </p>
             </div>
         </div>

@@ -46,16 +46,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="table-responsive">
                 <table class="table bounce">
                     <thead>
-                    <th><?= $long_url_msg; ?></th>
                     <th><?= $short_url_msg; ?></th>
+                    <th><?= $long_url_msg; ?></th>
                     </thead>
                     <tbody>
                     <?php foreach ($lastUrls as $lastUrl): ?>
                         <tr>
                             <td><?= $lastUrl->short_url; ?></td>
                             <td>
-                                <a href="<?= base_url(); ?><?= $lastUrl->long_url; ?>">
-                                    <?= base_url(); ?><?= $lastUrl->long_url; ?>
+                                <a href="<?= $lastUrl->long_url; ?>">
+                                    <?= $lastUrl->long_url; ?>
                                 </a>
                             </td>
                         </tr>

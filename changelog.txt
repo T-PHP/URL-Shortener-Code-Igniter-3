@@ -1,0 +1,16 @@
+/-----------------2018/02/27 v0.1.1-----------------\
+- Correct bug Url Expander (insert database)
+- Correct table <th> name in Url Expander
+- Correct link Long Url in Url Expander
+- Correct redirect type 301 in Url Shortener
+- Create downloads root folder
+- Insert link to download script on Installation page
+- Insert link to Github on footer
+- Modify download script link to Github
+- Add minimized CSS files
+- Add favicon
+- Add README informations
+- Add Changelog
+
+/-----------------2018/02/26 v0.1.0-----------------\
+- First commit

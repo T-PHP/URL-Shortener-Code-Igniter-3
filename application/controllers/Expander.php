@@ -69,16 +69,17 @@ class Expander extends CI_Controller {
                 $data['location'] = '';
 
                 if(isset($data['getHeaders']['Location']) AND !empty($data['getHeaders']['Location'])):
+                    // Check if array (multiple redirects) & Insert Database
                     if(is_array($data['getHeaders']['Location'])):
                         $data['location'] = current($data['getHeaders']['Location']);
                         // Insert URL in Database
                         $this->UrlExpander->insertUrl($data['urlAddress'], $data['location']);
                     else:
                         $data['location'] = $data['getHeaders']['Location'];
+                        // Insert URL in Database
+                        $this->UrlExpander->insertUrl($data['urlAddress'], $data['location']);
                     endif;
                 endif;
-
-
 
                 $this->load->view('header', $seo);
                 $this->load->view('urls/expander', $data);
